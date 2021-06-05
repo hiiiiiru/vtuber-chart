@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap");
+
+html {
+  background-color: #3f3f44;
+}
+
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 5000px !important;
+  }
+}
+
+.youtube-page_container {
+  background-color: #3f3f44;
+  font-family: 'Noto Sans JP';
+
+  .chart-header {
+    background-color: #404057;
+    color: white;
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content: space-between;
+
+    img {
+      width: 15%;
+    }
+
+    .title {
+      width: 70%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+
+      h1 {
+        font-size: 4vw;
+      }
+
+      h6 {
+        font-size: 2vw;
+      }
+    }
+
+    .week-column {
+      width: 15%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #EF99A8;
+
+      .week {
+        height: 80%;
+        padding: 1.5vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .label {
+          font-size: 2vw;
+        }
+
+        .week-int {
+          font-size: 4vw;
+        }
+
+      }
+
+      .month {
+        background-color: white;
+        color: #EF99A8;
+        font-weight: 700;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 20%;
+      }
+    }
+  }
+
+  .chart-container {
+    padding-top: 30px;
+
+    .entry-wrapper {
+      margin-bottom: 30px;
+      display: flex;
+
+      .rank-wrapper {
+        width: 10%;
+        background-color: #EF99A8;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 5vw;
+      }
+
+      .video-info {
+        width: 65%;
+        position: relative;
+
+        img {
+          height: 14vw;
+          width: 100%;
+          object-fit: cover;
+        }
+
+        .overlay-info {
+          position: absolute;
+          top: 0;
+          z-index: 10;
+          background-color: rgba(64, 64, 69, 0.7);
+          color: white;
+          width: 100%;
+          height: 100%;
+          padding: 1.5vw;
+          display: flex;
+          justify-content: space-between;
+
+          .info {
+            .title {
+              font-size: 2.8vw;
+              margin-bottom: 10px;
+            }
+
+            .artist, .composer {
+              font-size: 1.7vw;
+            }
+          }
+
+          .type {
+            padding: 10px;
+            height: fit-content;
+
+            &.original {
+              background-color: blue;
+            }
+
+            &.cover {
+              background-color: green;
+            }
+          }
+        }
+      }
+
+      .chart-info {
+        width: 25%;
+        background-color: #EF99A8;
+        display: flex;
+        color: white;
+
+        .progress-column {
+          width: 45%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 2vw;
+        }
+
+        .chart-progress {
+          padding: 10px;
+          border-left: solid 1px white;
+          font-size: 1.5vw;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}

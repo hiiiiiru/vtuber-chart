@@ -1,0 +1,41 @@
+{
+  "name": "vtuber-chart",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3002",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint ./components/** src/pages/** -c .eslintrc.json --ext js,jsx",
+    "lint-fix": "eslint ./components/** src/pages/** -c .eslintrc.json --fix --ext js,jsx"
+  },
+  "dependencies": {
+    "@prisma/client": "^2.22.1",
+    "bootstrap": "^4.6.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "got": "^11.8.2",
+    "lodash": "^4.17.21",
+    "moment-timezone": "^0.5.32",
+    "next": "10.0.3",
+    "node-fetch": "^2.6.1",
+    "react": "17.0.1",
+    "react-bootstrap": "^1.4.0",
+    "react-dom": "17.0.1",
+    "react-icons": "^4.1.0",
+    "sass": "^1.29.0"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "eslint": "^7.2.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "^7.20.6",
+    "eslint-plugin-react-hooks": "^4.0.0",
+    "prettier": "^2.2.1",
+    "prisma": "^2.22.1",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.4"
+  }
+}
